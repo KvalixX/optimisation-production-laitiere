@@ -17,7 +17,8 @@ Ce projet est une application Python interactive d'optimisation de la production
 
 ## 🚀 Fonctionnalités
 
-Le programme propose un menu interactif en ligne de commande permettant de :
+Le programme propose deux interfaces (une graphique et une en ligne de commande) permettant de :
+- **Interface Graphique (Nouveau) :** Application de bureau conviviale (`gui.py`) avec console intégrée et formulaires interactifs pour la configuration des données.
 - **Chapitre 1 — Méthode Graphique (2 variables) :** Résolution d'un sous-problème simplifié avec une visualisation graphique de la zone réalisable et de la droite de profit maximum (Isoprofit).
 - **Chapitre 2 — Méthode du Simplexe (4 variables) :** Résolution du problème complet utilisant l'algorithme du simplexe, avec détail des itérations et tableaux intermédiaires.
 - **Exécution combinée :** Lancement des deux chapitres successivement.
@@ -43,17 +44,26 @@ Assurez-vous d'avoir [Python 3.8+](https://www.python.org/) installé sur votre 
 
 ## ▶️ Utilisation
 
-Pour lancer l'application, exécutez le script principal à la racine du projet :
+Vous avez le choix entre deux interfaces pour utiliser l'application :
 
+**Option 1 : Interface Graphique (Recommandée)**
+Pour lancer l'application avec une interface visuelle conviviale (Tkinter), exécutez :
+```bash
+python gui.py
+```
+
+**Option 2 : Interface en Ligne de Commande**
+Pour utiliser le menu interactif classique dans le terminal :
 ```bash
 python main.py
 ```
 
-Laissez-vous ensuite guider par le menu interactif !
+Laissez-vous ensuite guider par les menus de l'interface choisie !
 
 ## 📂 Structure du Projet
 
-- `main.py` : Point d'entrée de l'application et menu principal.
+- `gui.py` : Interface graphique de bureau (GUI) utilisant Tkinter.
+- `main.py` : Point d'entrée de l'application et menu principal en ligne de commande.
 - `chapitre1_graphique.py` : Logique mathématique et affichage matplotlib pour la méthode graphique.
 - `chapitre2_simplexe.py` : Logique de l'algorithme du simplexe et affichage des tableaux pas-à-pas.
 - `donnees.py` : Module de gestion (sauvegarde, modification, chargement) des variables de production.

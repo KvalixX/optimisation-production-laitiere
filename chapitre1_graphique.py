@@ -468,7 +468,7 @@ def section8_graphique():
     plt.savefig('chapitre1_region_realisable.png', dpi=100, bbox_inches='tight')
     print("  ✓ Graphique sauvegardé : 'chapitre1_region_realisable.png'")
     
-    plt.show()
+    plt.show(block=False)
 
 
 def run_chapitre1():
